@@ -1,18 +1,19 @@
-# Student portfolio
+# Shanne Quitlong — photo portfolio
 
-A responsive Next.js App Router portfolio inspired by the playful collage spirit of sebinjeon.com, with original CSS-built project artwork. All names, projects, skills, and project dates are explicitly illustrative samples.
+A Next.js portfolio with a single-screen photo collage homepage, an aquarium video background, and separate About, Works, Contact, and project pages.
 
-## Run
+## Run locally
 
-Use Node.js 20.9 or newer. Install with `npm install`, then run `npm run dev`. Open http://localhost:3000. Use `npm run build` to produce a static website in `out/`.
+Use Node.js 20.9 or newer. Run `pnpm install` then `pnpm dev`, or use `npm install` and `npm run dev`. Build a static export with `pnpm build` (output: `out/`).
 
-## Make it yours
+## Customize
 
-- Edit `lib/content.ts` for your name, initials, introduction, email, social links, and projects. Empty contact and social fields intentionally do not generate fake links.
-- Add optional `url` and `github` properties to projects to display real links in the project dialog.
-- Update the sample labels, about text, toolkit, and contact wording in `app/page.tsx` after adding real content.
-- Update page title and description in `app/layout.tsx`.
-- Customize colors and responsive layouts in `app/globals.css`.
-- Replace the illustrative previews in `components/project-art.tsx` with your actual project screenshots.
+- Replace photo URLs in `lib/photos.ts`. You can put local photos in `public/photos/` and reference them as `/photos/name.jpg`.
+- The center portrait flips between two placeholders when clicked. Replace both portrait URLs.
+- Edit sample projects and contact links in `lib/content.ts`.
+- Edit your bio in `app/about/page.tsx` and contact wording in `app/contact/page.tsx`.
+- Sample project images link to individual `/works/[slug]` pages. All sample labels should be updated when adding real work.
+- The video uses the official YouTube iframe player for `m5sAV-bS56k`, with muted autoplay, looping, and a play/pause control. YouTube availability, ads, embedding rules, network access, and browser autoplay policy can affect playback. A thumbnail remains behind the video as a fallback; an embed error provides a YouTube link.
+- Reduced-motion preferences disable autoplay. Photos and links remain usable without video playback.
 
-Includes category filtering, text search, accessible native project dialogs, keyboard focus styling, reduced-motion support, and mobile layouts. Google Fonts are optional; local system fonts provide fallbacks. No database or API keys are needed.
+Placeholder photos are served from Unsplash. No contact messages are submitted until you add your email or a real contact integration.

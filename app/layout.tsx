@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
 import './globals.css';
-export const metadata: Metadata = { title: 'Your Name — Creative Developer', description: 'A fourth-year BSIT student’s digital workbench. Explore projects, experiments, and the ideas behind them.' };
-export default function RootLayout({ children }: Readonly<{children: React.ReactNode}>) { return <html lang="en"><body>{children}</body></html>; }
+import { SiteShell } from '@/components/site-shell';
+export const metadata: Metadata = { title: 'Shanne Quitlong — Portfolio', description: 'The personal portfolio of Shanne Quitlong, a fourth-year BSIT student. A collection of projects, ideas, and explorations.' };
+export default function RootLayout({ children }: Readonly<{children: React.ReactNode}>) { return <html lang="en"><body><SiteShell>{children}</SiteShell></body></html>; }

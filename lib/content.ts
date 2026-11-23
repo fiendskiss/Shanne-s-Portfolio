@@ -1,5 +1,5 @@
 // Replace these labeled samples with your own work. Optional URLs only appear when supplied.
-export const profile = { name: 'Your Name', initials: 'YN', email: '', github: '', linkedin: '', intro: 'A fourth-year BSIT student turning curious ideas into useful digital experiences.' };
+export const profile = { name: 'Shanne Quitlong', initials: 'SQ', email: '', github: '', linkedin: '', intro: 'A fourth-year BSIT student turning curious ideas into useful digital experiences.' };
 export type Project = { id: string; title: string; category: 'Web development' | 'UI / UX' | 'Experiments'; year: string; description: string; tags: string[]; visual: string; challenge: string; approach: string; url?: string; github?: string };
 export const projects: Project[] = [
 {id:'campus',title:'Campus Connect',category:'Web development',year:'2026',description:'A little less campus chaos. A little more connection.',tags:['Next.js','TypeScript','Supabase'],visual:'campus',challenge:'An example student portal that brings scattered campus updates into one calm space.',approach:'A dashboard concept for announcements, upcoming events, and student resources. Replace this sample with your project’s problem, your role, and the outcome.'},
@@ -7,3 +7,4 @@ export const projects: Project[] = [
 {id:'pocket',title:'Pocket Plan',category:'Web development',year:'2025',description:'Making everyday money a little easier to understand.',tags:['React','Tailwind CSS','Chart.js'],visual:'pocket',challenge:'A sample personal budgeting interface designed around a quick, readable financial overview.',approach:'A mobile-first concept with spending categories and visual summaries. Replace these illustrative details with your implementation.'},
 {id:'play',title:'Small Experiments',category:'Experiments',year:'2025',description:'A space to play, break things, and learn something new.',tags:['Creative coding','CSS','JavaScript'],visual:'play',challenge:'A sample collection of small interactions and visual explorations.',approach:'Explorations in CSS geometry, motion, and playful interface details. Link your own experiments and describe what you learned.'}
 ];
+
