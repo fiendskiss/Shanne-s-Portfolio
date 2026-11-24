@@ -6,9 +6,9 @@ export const photos = {
  contact:'https://res.cloudinary.com/dcmj7quyv/image/upload/v1777642331/copy_of_img_8052_ippjuv_58d4aa.jpg',
 };
 export const workPhotos: Record<string, string> = {
- myriad: 'https://res.cloudinary.com/ddt557yb0/image/upload/v1795483802/3_czmw7u.png',
- nabu: 'https://res.cloudinary.com/ddt557yb0/image/upload/v1795483803/2_pm934i.png',
- biyaheable: 'https://res.cloudinary.com/ddt557yb0/image/upload/v1795483802/1_gtnqzu.png',
+ myriad: 'https://res.cloudinary.com/ddt557yb0/image/upload/v1795477817/home_hntdmm.png',
+ nabu: 'https://res.cloudinary.com/ddt557yb0/image/upload/v1795477824/nabu_u2outm.png',
+ biyaheable: 'https://res.cloudinary.com/ddt557yb0/image/upload/v1795482973/splashscreen_tnfgo5.png',
 };
 
 // Project samples in display order.

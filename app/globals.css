@@ -105,3 +105,8 @@
 .contact-socials a:focus-visible{outline:2px solid #437ba9;outline-offset:4px}
 @media(prefers-reduced-motion:reduce){.contact-socials a:hover,.contact-socials a:focus-visible{transform:none}}
 .project-links{margin-top:20px}
+
+/* Homepage project photos reveal their original colors on interaction. */
+.is-home .work-photo img{filter:grayscale(1);transition:filter .3s ease}
+.is-home .work-photo:hover img,.is-home .work-photo:focus-visible img{filter:grayscale(0)}
+@media(prefers-reduced-motion:reduce){.is-home .work-photo img{transition:none}}
