@@ -3,7 +3,7 @@ export const photos = {
  portrait:'https://res.cloudinary.com/ddt557yb0/image/upload/v1795448473/IMG_6548_2_etyvvg.jpg',
  portraitAlternate:'https://res.cloudinary.com/ddt557yb0/image/upload/f_jpg,q_auto,w_1000/v1795448535/IMG_5981_mzv1wv.heic',
  about:'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=600&q=85',
- contact:'https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=600&q=85',
+ contact:'https://res.cloudinary.com/dcmj7quyv/image/upload/v1777642331/copy_of_img_8052_ippjuv_58d4aa.jpg',
 };
 export const workPhotos: Record<string, string> = {
  myriad: 'https://res.cloudinary.com/ddt557yb0/image/upload/v1795483802/3_czmw7u.png',
