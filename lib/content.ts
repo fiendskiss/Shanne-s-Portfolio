@@ -1,6 +1,6 @@
 // Replace these labeled samples with your own work. Optional URLs only appear when supplied.
 export const profile = { name: 'Shanne Quitlong', initials: 'SQ', email: '', github: 'https://github.com/fiendskiss', facebook: 'https://www.facebook.com/quitlongshan/', linkedin: 'https://www.linkedin.com/in/shanne-quitlong-815972449', intro: 'A fourth-year BSIT student turning curious ideas into useful digital experiences.' };
-export type Project = { id: string; title: string; category: 'Web development' | 'UI / UX' | 'Experiments'; year: string; description: string; tags: string[]; visual: string; challenge: string; approach: string; url?: string; urlLabel?: string; github?: string };
+export type Project = { id: string; title: string; category: string; year: string; description: string; tags: string[]; visual: string; challenge: string; approach: string; url?: string; urlLabel?: string; github?: string };
 export const projects: Project[] = [
 {id:'myriad',url:'https://fiendskiss.github.io/MYRIAD-Creative-Studio/',
     urlLabel:'Visit Myriad',
