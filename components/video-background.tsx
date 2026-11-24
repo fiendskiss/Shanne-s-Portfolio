@@ -2,6 +2,9 @@
 
 import { useEffect, useRef, useState } from 'react';
 
+// Preserve the uploaded resolution/frame rate; request broadly supported H.264 MP4.
+const backgroundVideoURL = 'https://res.cloudinary.com/ddt557yb0/video/upload/f_mp4,vc_h264,q_auto:best/v1795518892/YTDown.com_YouTube_Media_q8nPaqfRm_c_Riverside-Train-Ride-in-Gifu-Japan-8K-60fps-HDR-Calm-Piano-Natural-Ambience_001_1080p_4_tfyquw.mov';
+
 export function BackgroundVideo() {
   const video = useRef<HTMLVideoElement>(null);
   const [playing, setPlaying] = useState(false);
@@ -35,13 +38,13 @@ export function BackgroundVideo() {
       <video ref={video} className={`video-player ${failed ? 'video-failed' : ''}`} muted loop playsInline preload="metadata" poster="/video/background-poster.jpg" tabIndex={-1}
         onPlaying={()=>setPlaying(true)} onPause={()=>setPlaying(false)}
         onError={()=>{setFailed(true);setPlaying(false);}}>
-        <source src="/video/background.mp4" type="video/mp4" />
+        <source src={backgroundVideoURL} type="video/mp4" />
       </video>
       <div className="video-tint" />
     </div>
     <div className="video-controls">
       <button onClick={toggleVideo} aria-label={playing ? 'Pause background video' : 'Play background video'}><span aria-hidden="true">{playing ? 'Ⅱ' : '▷'}</span> {playing ? 'pause scene' : failed ? 'retry scene' : 'play scene'}</button>
-      {failed && <a href="/video/background.mp4" target="_blank" rel="noreferrer">Open video</a>}
+      {failed && <a href={backgroundVideoURL} target="_blank" rel="noreferrer">Open video</a>}
     </div>
   </>;
 }
