@@ -20,3 +20,88 @@
 @media(max-width:800px){.logo{font-size:29px}.site-header nav{font-size:18px}.photo-caption{font-size:17px}.portrait .photo-caption{font-size:20px}.work-photo .photo-caption{font-size:13px}.portrait-overlay{font-size:24px}.portrait-note{font-size:18px}.stack-label{font-size:24px}}
 @media(max-width:540px){.logo{font-size:24px;letter-spacing:-1px}.site-header nav{font-size:16px;gap:15px;letter-spacing:-.35px}.photo-caption{font-size:16px;letter-spacing:-.6px}.portrait .photo-caption{font-size:18px}.work-photo .photo-caption{font-size:11px;letter-spacing:-.5px}.portrait-overlay{font-size:20px}.portrait-note{font-size:16px}.stack-label{font-size:21px}.inner-page h1{font-size:44px;letter-spacing:-1.8px}.eyebrow{font-size:21px}.work-tile h2{font-size:29px}}
 @media(max-width:360px){.site-header{padding-left:16px;padding-right:16px}.logo{font-size:22px}.site-header nav{font-size:15px;gap:12px}.portrait .photo-caption{font-size:16px}.work-photo .photo-caption{font-size:10px}}
+
+/* A quiet paused scene, without YouTube's pause-screen controls. */
+.video-player.video-failed{display:block;opacity:0;pointer-events:none}
+
+/* Compact cream-and-sage music card. */
+.header-right{display:flex;align-items:center;gap:30px}.music-widget{width:268px;position:relative;text-shadow:none;color:#375348;flex-shrink:0}.music-card{height:75px;display:flex;align-items:center;gap:11px;padding:10px 12px;background:linear-gradient(115deg,#fffff4ed,#e7efdfed);border:1px solid #8fa58d;border-radius:3px;box-shadow:3px 3px 0 #dbe6d6a6,inset 0 0 0 3px #fffffa80;backdrop-filter:blur(14px)}.music-disc{width:45px;height:45px;border-radius:50%;flex-shrink:0;position:relative;background:repeating-radial-gradient(circle,transparent 0 5px,#7e999922 5.5px 6px),conic-gradient(from 35deg,#eff7ed,#b3cac4,#f7f9eb,#8eaaa7,#d9ebd8,#fcfbeb,#eff7ed);box-shadow:inset 0 0 0 1px #92aaa761,1px 2px 6px #28493e22;animation:disc-turn 8s linear infinite;animation-play-state:paused}.music-disc:after{content:'';position:absolute;inset:16px;border-radius:50%;background:#455e57;border:3px solid #ecf1db;box-shadow:0 0 0 1px #94aaa5}.music-is-playing .music-disc{animation-play-state:running}.music-info{min-width:0;flex:1}.music-status{display:block;text-transform:uppercase;letter-spacing:1px;font-size:8px;line-height:1.3;color:#657b69}.music-title{display:block;font-family:var(--display);font-size:23px;letter-spacing:-.8px;line-height:1.2;white-space:nowrap}.music-title:hover{text-decoration:underline;text-decoration-thickness:1px}.music-meta{display:flex;align-items:center;gap:8px;margin-top:5px}.music-bars{display:flex;gap:2px;height:14px;align-items:center}.music-bars i{display:block;width:2px;background:#7d9479;animation:music-wave .8s ease-in-out infinite alternate;animation-play-state:paused;transform-origin:center}.music-is-playing .music-bars i{animation-play-state:running}.spotify-toggle{border:0;border-bottom:1px solid #9eaf95;background:none;color:#52694f;font-size:9px;padding:0;line-height:1.4}.music-play{width:32px;height:38px;display:grid;place-items:center;border:1px solid #a7b59a;border-radius:3px;background:linear-gradient(#fffff3,#dbe7d1);color:#365348;padding:7px;flex-shrink:0;box-shadow:inset 0 1px 0 white}.music-play:hover{background:#d0dfc4}.music-play:disabled{opacity:.5;cursor:wait}.music-play svg{width:17px;height:17px;fill:currentColor;stroke:currentColor;stroke-width:2}.music-play svg path[d^='M6']{stroke-width:3;fill:none}.music-widget button:focus-visible,.music-widget a:focus-visible{outline:2px solid #365348;outline-offset:3px}.spotify-details{position:absolute;top:calc(100% + 12px);right:0;width:320px;background:#f7f9ef;color:#375348;border:1px solid #91a58a;border-radius:8px;padding:12px;box-shadow:0 10px 35px #163c3d45;visibility:hidden;opacity:0;pointer-events:none;z-index:50}.spotify-details.is-expanded{visibility:visible;opacity:1;pointer-events:auto}.spotify-details-heading{display:flex;justify-content:space-between;align-items:center;font-size:12px;margin-bottom:10px}.spotify-details-heading button{font-size:24px;line-height:1;border:0;background:none;color:inherit}.spotify-host{min-height:152px}.spotify-host iframe{border:0;border-radius:8px;width:100%;display:block}.spotify-details p{font-size:11px;line-height:1.5;margin:10px 0 0}.spotify-details a{text-decoration:underline}.music-widget:has(.spotify-details.is-expanded){z-index:60}
+@keyframes disc-turn{to{transform:rotate(360deg)}}@keyframes music-wave{to{transform:scaleY(.35)}}
+@media(max-width:1100px){.header-right{gap:20px}.site-header nav{gap:23px}.music-widget{width:250px}.music-card{padding:9px;gap:9px}.music-title{font-size:22px}}
+@media(max-width:900px){.site-header{height:145px;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:46px 80px;align-content:center;row-gap:4px}.header-right{display:contents}.site-header .logo{grid-column:1;grid-row:1}.site-header nav{grid-column:2;grid-row:1;justify-self:end}.music-widget{grid-column:2;grid-row:2;justify-self:end}.music-card{height:69px}.photo-world{height:min(540px,65vh)}.is-home{height:auto;min-height:100svh;overflow-x:clip}}
+
+/* On small screens each caption has its own space, outside other photographs. */
+@media(max-width:700px){
+ .site-header{padding:10px 22px 0;height:145px;grid-template-rows:38px 78px;row-gap:6px}.site-header .logo{font-size:25px;white-space:nowrap}.site-header nav{font-size:16px;gap:16px}.music-widget{width:250px}.music-card{height:67px}.music-status{font-size:8px}.music-title{font-size:22px}.music-disc{width:41px;height:41px}.music-disc:after{inset:14px}.spotify-details{width:min(320px,calc(100vw - 44px))}
+ .is-home{height:auto;min-height:100svh;overflow-x:clip}.home-scene{display:block;flex:1;padding:16px 25px 4px}.photo-world{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);grid-template-rows:clamp(175px,26svh,240px) auto clamp(195px,28svh,250px);column-gap:24px;row-gap:16px;width:100%;height:auto;max-height:none;margin:0 auto;max-width:480px}
+ .about-photo,.contact-photo,.portrait{position:relative;left:auto;top:auto;width:100%;height:100%;min-width:0;align-self:center;z-index:auto;padding:5px 5px 0}.about-photo{grid-column:1;grid-row:1;height:79%;--rotation:-5deg}.portrait{grid-column:2;grid-row:1;--rotation:3deg;z-index:1}.contact-photo{grid-column:1;grid-row:3;height:75%;align-self:start;margin-top:18px;--rotation:-4deg}.photo-link img,.portrait img{height:calc(100% - 35px)}
+ .photo-caption,.portrait .photo-caption{height:35px;font-size:clamp(13px,3.8vw,19px);letter-spacing:-.45px;padding:0 3px;white-space:normal;line-height:1.1}.portrait .photo-caption>span{font-size:20px;margin-left:4px}.portrait-overlay{display:none}.portrait-note{grid-column:1/-1;grid-row:2;position:static;left:auto;top:auto;transform:none;font-size:17px;text-align:center;line-height:1.4;padding:2px 0;margin:0;z-index:0}
+ .work-stack{grid-column:2;grid-row:3;position:relative;left:auto;top:auto;width:100%;height:100%;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:minmax(0,1fr) minmax(0,1fr) 28px;gap:10px 8px;isolation:auto}.work-photo{position:relative;left:auto;top:auto;width:100%;height:100%;padding:4px 4px 0;--rotation:0deg;transform:none;min-width:0;z-index:0}.work-photo img{height:calc(100% - 30px)}.work-photo .photo-caption{height:30px;font-size:clamp(10px,2.8vw,14px);letter-spacing:-.3px;white-space:normal;line-height:1.1;display:flex;align-items:center;justify-content:center;text-align:center;padding:0}.work-photo .photo-caption small{display:none}.work-photo:hover,.work-photo:focus-visible{transform:translateY(-4px) scale(1.03);z-index:2}.stack-label{grid-column:1/-1;grid-row:3;position:static;left:auto;top:auto;transform:none;font-size:21px;line-height:1.25;text-align:center;white-space:nowrap}.stack-label span{font-size:11px}
+ .photo-link:hover,.photo-link:focus-visible{transform:translateY(-5px) rotate(0deg) scale(1.025)}.site-footer{font-size:11px;line-height:1.5;padding:25px 15px 52px}.video-controls{bottom:12px;left:50%;transform:translateX(-50%)}.video-controls button,.video-controls a{font-size:11px;padding:7px 11px}.inner-page{margin-top:20px}.music-widget button,.spotify-details button{min-height:30px}
+}
+@media(max-width:360px){.site-header{padding-left:16px;padding-right:16px}.site-header .logo{font-size:22px}.site-header nav{font-size:15px;gap:12px}.home-scene{padding-left:19px;padding-right:19px}.photo-world{column-gap:17px;row-gap:13px}.portrait .photo-caption{font-size:14px}.photo-caption{font-size:13px}.work-photo .photo-caption{font-size:10px}.music-widget{width:240px}}
+@media(max-width:900px){.site-header{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.music-widget{grid-column:1/-1}}
+@media(max-width:700px){.video-controls{position:absolute}.site-header nav{min-width:0}.site-header .logo{min-width:0}}
+
+/* Lightweight music player. */
+.music-widget{width:222px;color:white;text-shadow:0 1px 5px #00312d80}
+.music-card{height:62px;gap:9px;padding:7px 9px;background:transparent;border:1px solid white;box-shadow:none;backdrop-filter:none}
+.music-disc{width:34px;height:34px}.music-disc:after{inset:11px;border-width:2px}
+.music-status{color:white;font-size:8px;letter-spacing:.6px}.music-title{font-size:21px}.music-meta{margin-top:2px}.music-bars{height:11px}.music-bars i{background:white}
+.spotify-toggle{color:white;border-color:#ffffff90}.music-play{width:30px;height:32px;padding:6px;color:white;background:transparent;border-color:white;box-shadow:none}.music-play:hover{background:#ffffff20}
+.music-widget button:focus-visible,.music-widget a:focus-visible{outline-color:white}.spotify-details button:focus-visible,.spotify-details a:focus-visible{outline-color:#365348}
+@media(max-width:900px){.site-header{height:127px;grid-template-rows:40px 64px}.music-widget{width:222px}}
+@media(max-width:540px){.site-header{height:125px;grid-template-rows:38px 62px}}
+
+.project-photo-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin-top:20px}.project-photo-grid.single-photo{grid-template-columns:1fr}.project-photo-grid figure{margin:0;min-width:0}.project-photo-grid img{display:block;width:100%;aspect-ratio:4/3;object-fit:contain;background:#e5eae2;border:1px solid #c3cdc1}.project-photo-grid figcaption{font-size:13px;line-height:1.5;color:#63746a;margin-top:8px}
+@media(max-width:540px){.project-photo-grid{grid-template-columns:1fr;gap:20px}}
+
+/* Center the final project while preserving the two-column card width. */
+@media(min-width:541px){.works-grid>.work-tile:last-child:nth-child(odd){grid-column:1/-1;justify-self:center;width:calc((100% - 28px)/2)}}
+
+/* Place the music card beneath the navigation, aligned to its right edge. */
+@media(min-width:901px){
+ .site-header{height:142px;display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-rows:42px 62px;align-content:center;row-gap:8px}
+ .header-right{display:contents}
+ .site-header .logo{grid-column:1;grid-row:1;align-self:center}
+ .site-header nav{grid-column:2;grid-row:1;justify-self:end}
+ .site-header .music-widget{grid-column:2;grid-row:2;justify-self:end}
+}
+.music-status{font-size:7px;letter-spacing:.1px;white-space:nowrap;line-height:1.4}
+
+.photo-link.about-photo{padding:0;background:transparent;border:0;box-shadow:none;width:24%;height:auto;aspect-ratio:16/9}
+.about-photo video{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:contain;filter:saturate(.8);transition:filter .3s}
+@media(max-width:700px){.photo-link.about-photo{width:100%;justify-self:center}}
+.photo-link.contact-photo{margin-left:-12px;margin-top:-12px}
+.about-caption{position:absolute;top:100%;left:50%;transform:translateX(-50%);color:var(--white);font-family:var(--display);font-weight:400;font-optical-sizing:auto;font-size:28px;font-style:italic;letter-spacing:-.6px;white-space:nowrap;text-shadow:0 2px 8px #003b38;text-align:center}
+@media(max-width:800px){.about-caption{font-size:24px}}
+.work-photo img,.work-tile img,.project-detail>img{object-fit:contain}
+.work-stack .work-photo{height:auto;align-self:start}
+.work-stack .work-photo img{height:auto;width:100%}
+.work-photo-0{z-index:3}.work-photo-1{z-index:2}.work-photo-2{z-index:1}
+@media(max-width:700px){.photo-link.contact-photo{margin-top:6px}.about-caption{font-size:21px}.work-stack .work-photo{align-self:end}.work-photo-0{z-index:3}.work-photo-1{z-index:2}.work-photo-2{z-index:1}}
+.about-photo:hover video{filter:saturate(1.1)}
+
+/* Keep the works caption close to the three-photo stack on desktop. */
+@media(min-width:701px){.work-photo-0{top:16%}.work-photo-1{top:35%}.work-photo-2{top:52%}.work-stack .stack-label{top:100%;left:50%;transform:translateX(-50%) rotate(5deg);text-align:center}}
+
+/* Compact mobile music controls. */
+@media(max-width:700px){
+ .site-header{height:111px;grid-template-rows:38px 48px}
+ .site-header .music-widget{width:98px}
+ .music-card{height:48px;padding:5px 8px;gap:10px;justify-content:space-between}
+ .music-info{display:none}
+ .music-disc{width:30px;height:30px}
+ .music-disc:after{inset:9px}
+ .music-play{width:36px;height:36px;padding:8px}
+}
+
+/* Social links stay together, with a gentle lift and animated underline. */
+.contact-socials{display:flex;align-items:center;gap:clamp(14px,3vw,24px);flex-wrap:nowrap}
+.contact-socials a{position:relative;display:inline-block;color:#6494bd;font-size:16px;white-space:nowrap;padding:5px 0;transition:color .2s ease,transform .2s ease}
+.contact-socials a:after{content:'';position:absolute;left:0;right:0;bottom:0;height:2px;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform .2s ease}
+.contact-socials a:hover,.contact-socials a:focus-visible{color:#437ba9;transform:translateY(-3px)}
+.contact-socials a:hover:after,.contact-socials a:focus-visible:after{transform:scaleX(1)}
+.contact-socials a:focus-visible{outline:2px solid #437ba9;outline-offset:4px}
+@media(prefers-reduced-motion:reduce){.contact-socials a:hover,.contact-socials a:focus-visible{transform:none}}
+.project-links{margin-top:20px}

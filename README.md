@@ -4,7 +4,16 @@ A Next.js portfolio with a single-screen photo collage homepage, a riverside tra
 
 ## Run locally
 
-Use Node.js 20.9 or newer. Run `pnpm install` then `pnpm dev`, or use `npm install` and `npm run dev`. Build a static export with `pnpm build` (output: `out/`).
+Use Node.js 20.9 or newer with npm installed. From `D:\Documents\Portfolio`, run:
+
+```powershell
+npm --prefix student-portfolio install
+npm run dev
+```
+
+Open http://localhost:3000. If that port is occupied, use the address printed by Next.js. Stop the server with Ctrl+C. The install command is only needed for initial setup or when dependencies change.
+
+You can also run `npm install` and `npm run dev` directly inside `student-portfolio`. Build a static export with `npm run build` (output: `student-portfolio/out/` when launched from the workspace root). If `npm` is not recognized, install Node.js with npm and reopen your terminal.
 
 ## Customize
 

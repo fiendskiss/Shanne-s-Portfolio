@@ -1,10 +1,37 @@
 // Replace these labeled samples with your own work. Optional URLs only appear when supplied.
-export const profile = { name: 'Shanne Quitlong', initials: 'SQ', email: '', github: '', linkedin: '', intro: 'A fourth-year BSIT student turning curious ideas into useful digital experiences.' };
-export type Project = { id: string; title: string; category: 'Web development' | 'UI / UX' | 'Experiments'; year: string; description: string; tags: string[]; visual: string; challenge: string; approach: string; url?: string; github?: string };
+export const profile = { name: 'Shanne Quitlong', initials: 'SQ', email: '', github: 'https://github.com/fiendskiss', facebook: 'https://www.facebook.com/quitlongshan/', linkedin: 'https://www.linkedin.com/in/shanne-quitlong-815972449', intro: 'A fourth-year BSIT student turning curious ideas into useful digital experiences.' };
+export type Project = { id: string; title: string; category: 'Web development' | 'UI / UX' | 'Experiments'; year: string; description: string; tags: string[]; visual: string; challenge: string; approach: string; url?: string; urlLabel?: string; github?: string };
 export const projects: Project[] = [
-{id:'campus',title:'Campus Connect',category:'Web development',year:'2026',description:'A little less campus chaos. A little more connection.',tags:['Next.js','TypeScript','Supabase'],visual:'campus',challenge:'An example student portal that brings scattered campus updates into one calm space.',approach:'A dashboard concept for announcements, upcoming events, and student resources. Replace this sample with your project’s problem, your role, and the outcome.'},
-{id:'folio',title:'Folio Studio',category:'UI / UX',year:'2026',description:'A thoughtful home for independent creative work.',tags:['Figma','Design systems','Prototyping'],visual:'folio',challenge:'An example portfolio experience exploring how a clear visual hierarchy helps creative work speak for itself.',approach:'An editorial grid, expressive type, and a focused project detail flow. Add your actual design process and research here.'},
-{id:'pocket',title:'Pocket Plan',category:'Web development',year:'2025',description:'Making everyday money a little easier to understand.',tags:['React','Tailwind CSS','Chart.js'],visual:'pocket',challenge:'A sample personal budgeting interface designed around a quick, readable financial overview.',approach:'A mobile-first concept with spending categories and visual summaries. Replace these illustrative details with your implementation.'},
-{id:'play',title:'Small Experiments',category:'Experiments',year:'2025',description:'A space to play, break things, and learn something new.',tags:['Creative coding','CSS','JavaScript'],visual:'play',challenge:'A sample collection of small interactions and visual explorations.',approach:'Explorations in CSS geometry, motion, and playful interface details. Link your own experiments and describe what you learned.'}
+{id:'myriad',url:'https://fiendskiss.github.io/MYRIAD-Creative-Studio/',
+    urlLabel:'Visit Myriad',
+    title:'Myriad',
+    category:'Web development | UI Design',
+    year:'2025',
+    description:'A thoughtful home for independent creative work.',
+    tags:['HTML','CSS','JavaScript'],
+    visual:'folio',
+    challenge:'A photography studio website that brings creative work, photographers, and services into one space.',
+    approach:'A magazine-inspired layout with a focus on the visual content. Main Developer.'},
+{id:'nabu',url:'https://nabubot.vercel.app/',
+    urlLabel:'Visit Nabu',
+    title:'Nabu',
+    category:'Web development | UI Design',
+    year:'2026',
+    description:'A robotic companion for everyday life.',
+    tags:['Next.js','TypeScript','Supabase','Tailwind CSS', 'Framer Motion'],
+    visual:'campus',
+    challenge:'Nabu presents a technology concept through a website that helps visitors explore the product, understand its potential uses, and learn about its development.',
+    approach:'A dark palette is used with robot imagery and interactive components to create a futuristic feel. Main Developer.'},
+{id:'biyaheable',
+    url:'https://www.figma.com/proto/ZaE0YTQfKn9ZAob8I09bLT/Biyaheable?node-id=145-3710&p=f&t=k2GbInRcqnuQAm7r-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=9%3A433',
+    urlLabel:'View Biyaheable prototype',
+    title:'Biyaheable',
+    category:'Mobile app | UI Design | Prototyping',
+    year:'2026',
+    description:'A mobile app prototype exploring more accessible travel for people with disabilities.',
+    tags:['Figma'],
+    visual:'pocket',
+    challenge:'Biyaheable considers how a mobile experience could help people with accessibility needs plan journeys with greater confidence and independence.',
+    approach:'A navigation app centered on presenting travel information clearly for PWDs. An aspect of social media is integrated as well allowing the users to share their own experiences and recommendations. Main Designer.'},
 ];
 
