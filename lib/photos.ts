@@ -26,5 +26,5 @@ export const projectPhotos: Record<string, { src: string; caption: string }[]> =
   { src: 'https://res.cloudinary.com/ddt557yb0/image/upload/v1795477826/service_xwzp8j.png', caption: 'Myriad — services' },
   { src: 'https://res.cloudinary.com/ddt557yb0/image/upload/v1795477808/contact_n8i5kv.png', caption: 'Myriad — contact' },
  ],
- biyaheable: [{ src: 'https://res.cloudinary.com/ddt557yb0/image/upload/v1795477798/byahe_gkctvr.png', caption: 'Biyaheable — project sample' }],
+ biyaheable: [{ src: 'https://res.cloudinary.com/ddt557yb0/image/upload/v1795477798/byahe_gkctvr.png', caption: 'Biyaheable — project preview' }],
 };
