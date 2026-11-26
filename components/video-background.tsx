@@ -2,8 +2,8 @@
 
 import { useEffect, useRef, useState } from 'react';
 
-// Preserve the uploaded resolution/frame rate; request broadly supported H.264 MP4.
-const backgroundVideoURL = 'https://res.cloudinary.com/ddt557yb0/video/upload/f_mp4,vc_h264,q_auto:best/v1795518892/YTDown.com_YouTube_Media_q8nPaqfRm_c_Riverside-Train-Ride-in-Gifu-Japan-8K-60fps-HDR-Calm-Piano-Natural-Ambience_001_1080p_4_tfyquw.mov';
+// Deliver the original H.264 upload: on-demand conversion exceeds Cloudinary's size limit.
+const backgroundVideoURL = 'https://res.cloudinary.com/ddt557yb0/video/upload/v1795518892/YTDown.com_YouTube_Media_q8nPaqfRm_c_Riverside-Train-Ride-in-Gifu-Japan-8K-60fps-HDR-Calm-Piano-Natural-Ambience_001_1080p_4_tfyquw.mov';
 
 export function BackgroundVideo() {
   const video = useRef<HTMLVideoElement>(null);
@@ -35,10 +35,9 @@ export function BackgroundVideo() {
   return <>
     <div className="video-background" aria-hidden="true">
       <div className="video-poster" />
-      <video ref={video} className={`video-player ${failed ? 'video-failed' : ''}`} muted loop playsInline preload="metadata" poster="/video/background-poster.jpg" tabIndex={-1}
+      <video ref={video} src={backgroundVideoURL} className={`video-player ${failed ? 'video-failed' : ''}`} muted loop playsInline preload="metadata" poster="/video/background-poster.jpg" tabIndex={-1}
         onPlaying={()=>setPlaying(true)} onPause={()=>setPlaying(false)}
         onError={()=>{setFailed(true);setPlaying(false);}}>
-        <source src={backgroundVideoURL} type="video/mp4" />
       </video>
       <div className="video-tint" />
     </div>
